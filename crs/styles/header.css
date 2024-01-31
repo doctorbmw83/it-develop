@@ -1,0 +1,167 @@
+.header {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.header img{
+    width: 1920px;
+    height: 900px;
+}
+
+
+
+
+.header-menu {
+    height: 99px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 40px;
+    padding-right: 58px;
+
+}
+
+.header-menu__item {
+    color: #FFF;
+    font-size: 16px;
+    
+    font-weight: 500;
+    
+    
+}
+
+.header-menu__item a {
+    text-decoration: none;
+    /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+    display: inline-block;
+    /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный 
+    line-height: 1px; /*Задаём высоту строки (можно в пикселях)*/
+
+
+}
+
+.header-menu__item a:after {
+    display: block;
+    /*превращаем его в блочный элемент*/
+    content: "";
+    /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 0.5px;
+    /*задаём высоту линии*/
+    width: 0%;
+    /*задаём начальную ширину элемента (линии)*/
+    background-color: #fff;
+    /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out;
+    /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+
+}
+
+.header-menu__item a:hover:after,
+.header-menu__item a:focus:after {
+    width: 100%;
+}
+
+.header-menu__item a:hover {
+    color: #fff;
+}
+
+.separator::after {
+    display: flex;
+    content: "";
+    border: 0.5px solid #A1A1A1;
+    align-self: stretch;
+    flex-direction: column;
+    opacity: 0.5;
+
+}
+
+.header-content {
+    height: 800PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header-content__text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 220px;
+}
+
+.header-content__title {
+    width: 829px;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 134.09%;
+    /* 64.363px */
+    padding-top: 20px;
+    padding-bottom: 33px;
+}
+.header-content__title > span{
+    padding-right: 12px;
+}
+
+.button {
+    border-radius: 30px;
+    background: #4985FF;
+    box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
+    padding: 13px 36px 15px 36px;
+    border: none;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.button a {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Montserrat;
+    
+}
+.button:hover{
+    background: #206afd;
+}
+
+@media (max-width: 4000px) and (min-width: 992px){
+    .burger{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 992px){
+    .header-menu{
+        visibility: hidden;
+    }
+    .burger{
+        visibility: visible;
+    }
+    .header-content__title {
+        width: 629px;
+        font-size: 38px;}
+    
+}
+@media (max-width: 768px){
+    .header-content__title {
+        width: 529px;
+        font-size: 32px;}
+}
+
+@media (max-width: 576px){
+    .header-content__title {
+        width: 429px;
+        font-size: 28px;}
+}
+
+@media (max-width: 450px) and (min-width: 300px){.header-content__title {
+    width: 229px;
+    font-size: 24px;}
+    .header-content__text {
+        font-size: 12px;}
+
+}
