@@ -79,6 +79,8 @@
 }
 
 .activity-container__button {
+    margin-top: 48px;
+    margin-left: 2px;
     cursor: pointer;
     border-radius: 30px;
     background: #4985FF;
@@ -96,6 +98,90 @@
     font-size: 16px;
     font-weight: 500;
     font-family: Montserrat;
-    
+
+
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        width: 95vw;
+    }
+
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .services-item {
+
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .activity-container__title {
+        width: 639px;
+    }
+
+    .activity-container h2 {
+        font-size: 32px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .activity-container__text {
+        width: 530px;
+
+    }
+}
+
+@media (max-width: 688px) {
+    .services-item {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+
+    .activity-container__title {
+        width: 439px;
+    }
+
+    .activity-container h2 {
+        font-size: 24px;
+    }
+
+    .activity-container p {
+        font-size: 13px;
+    }
+
+    .activity-container__text {
+        width: 330px;
+
+    }
+}
+
+
+@media (max-width: 450px) and (min-width: 300px) {
+    .activity-container__title {
+        width: 310px;
+    }
+
+    .activity-container h2 {
+        font-size: 22px;
+    }
+
+    .services-item__title p {
+        font-size: 12px;
+    }
+
+    .activity-container__text {
+        width: 310px;
+
+    }
+
+    .services-item {
+
+        width: 300px;
+
+    }
 
 }
