@@ -16,17 +16,17 @@
 .header-menu {
     height: 99px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     gap: 40px;
-    padding-right: 58px;
+    padding-right: 22px;
+    
 
 }
 
 .header-menu__item {
     color: #FFF;
     font-size: 16px;
-
     font-weight: 500;
 
 
@@ -112,7 +112,7 @@
     border-radius: 30px;
     background: #4985FF;
     box-shadow: 0px 0px 10px 0px rgba(111, 111, 111, 0.25);
-    padding: 13px 36px 15px 36px;
+    padding: 13px 36px 13px 36px;
     border: none;
     transition: all 0.4s ease;
     cursor: pointer;
