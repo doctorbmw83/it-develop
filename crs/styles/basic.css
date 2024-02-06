@@ -20,7 +20,10 @@ a {
 }
 
 .wrapper {
-    width: 58%;
+    width: 57.82%;
     margin: 0 auto;
     /* padding: 0 20px 0 20px;  */
+}
+.flex{
+    display: flex;
 }

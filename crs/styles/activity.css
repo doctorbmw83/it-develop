@@ -90,6 +90,10 @@
     border: none;
     width: 200px;
     height: 45px;
+    transition: all 0.4s ease;
+}
+.activity-container__button:hover {
+    background: #206afd;
 }
 
 .activity-container__button a {
