@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 
@@ -43,7 +44,7 @@
         <div class="separator"></div>
         <div class="header-content wrapper">
             <p class="header-content__text">Передовая IT студия</p>
-            <h1 class="header-content__title"><span>Мы создаем легкие решения</span> сложных задач и проблем</h1>
+            <h1 data-aos="fade-right" class="header-content__title"><span>Мы создаем легкие решения</span> сложных задач и проблем</h1>
             <button class="button custom-btn btn-10" type="button"><a href="#">Наши проекты</a></button>
         </div>
     </header>
@@ -51,13 +52,13 @@
         <section class="activity">
             <div class="wrapper">
                 <div class="activity-container">
-                    <h2 class="activity-container__title">Мы создаем мобильные приложения
+                    <h2 class="activity-container__title" data-aos="fade-left">Мы создаем мобильные приложения
                         для крупных корпораций</h2>
                     <p class="activity-container__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                         вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                     </p>
                     <div class="services">
-                        <div class="services-item">
+                        <div class="services-item" data-aos="fade-up-right">
                             <div class="services-item__logo"><img src="crs/img/icons/servises-icon.svg"
                                     alt="services-icon"></div>
                             <div class="services-item__title">
@@ -75,7 +76,7 @@
                             </div>
 
                         </div>
-                        <div class="services-item">
+                        <div class="services-item" data-aos="fade-up-left">
                             <div class="services-item__logo"><img src="crs/img/icons/servises-icon.svg"
                                     alt="services-icon"></div>
                             <div class="services-item__title">
@@ -100,13 +101,13 @@
                         "рыбой" для текстов на латинице с начала XVI века. </p>
                     <a class="about-link" href="#">Подробнее о компании</a>
                 </div>
-                <div class="about-flex__img"><img src="crs/img/backgrounds/about-bgImg.png" alt="about-bgImg"></div>
+                <div class="about-flex__img" data-aos="flip-left"><img src="crs/img/backgrounds/about-bgImg.png" alt="about-bgImg"></div>
             </div>
             <div class="wrapper">
                 <div class="about-line"></div>
             </div>
             <div class="wrapper">
-                <div class="about-grid">
+                <div class="about-grid" data-aos="flip-up">
                     <div class="about-grid__item">
                         <img src="crs/img/icons/icon-about-web-programming.png" alt="web-programming">
                         <h3>125</h3>
@@ -149,21 +150,21 @@
             </div>
             <div class="flex-container flex wrapper">
                 <div class="flex-container__card">
-                    <img src="crs/img/backgrounds/all-services-card.png" alt="card.png">
+                    <img src="crs/img/backgrounds/all-services-card.png" alt="card.png" data-aos="zoom-in">
                     <h3><span>01. </span>Исследование и упаковка</h3>
                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                         стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                     <a href="#">Подробнее</a>
                 </div>
                 <div class="flex-container__card">
-                    <img src="crs/img/backgrounds/all-services-card.png" alt="card.png">
+                    <img src="crs/img/backgrounds/all-services-card.png" alt="card.png" data-aos="zoom-in">
                     <h3><span>01. </span>Исследование и упаковка</h3>
                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                         стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                     <a href="#">Подробнее</a>
                 </div>
                 <div class="flex-container__card">
-                    <img src="crs/img/backgrounds/all-services-card.png" alt="card.png">
+                    <img src="crs/img/backgrounds/all-services-card.png" alt="card.png" data-aos="zoom-in">
                     <h3><span>01. </span>Исследование и упаковка</h3>
                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является
                         стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
@@ -179,15 +180,25 @@
 
         <section class="projects">
             <div class="projects-container wrapper">
-                <h2 class="projects-container__title">Наши проекты</h2>
+                <h2 class="projects-container__title" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500">Наши проекты</h2>
                 <p class="projects-container__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
                     вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
                 </p>
                 <div class="projects-container__images flex">
-                    <div class="images__item"><img src="crs/img/backgrounds/projects-bg.png" alt="projects-bg"></div>
-                    <div class="images__item"><img src="crs/img/backgrounds/projects-bg.png" alt="projects-bg"></div>
-                    <div class="images__item"><img src="crs/img/backgrounds/projects-bg.png" alt="projects-bg"></div>
-                    <div class="images__item"><img src="crs/img/backgrounds/projects-bg.png" alt="projects-bg"></div>
+                    <div class="images__item"><img src="crs/img/backgrounds/projects-bg.png" alt="projects-bg" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"></div>
+                    <div class="images__item"><img src="crs/img/backgrounds/projects-bg.png" alt="projects-bg" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"></div>
+                    <div class="images__item"><img src="crs/img/backgrounds/projects-bg.png" alt="projects-bg" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"></div>
+                    <div class="images__item"><img src="crs/img/backgrounds/projects-bg.png" alt="projects-bg" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000"></div>
 
                 </div>
                 <div class="btn flex">
@@ -198,7 +209,8 @@
         <section class="video">
             <div class="wrapper">
                 <div class="video-content">
-                    <h2>Видео о нашей работе</h2>
+                    <h2 data-aos="fade-up"
+                    data-aos-anchor-placement="center-center">Видео о нашей работе</h2>
                     <p>Просто посмотрите, как мы работаем</p>
                     <div class="video-container">
                         <video src="/it-develop/crs/img/backgrounds/Запись 2024-02-15 090410.mp4"
@@ -211,7 +223,7 @@
         </section>
         <div class="video-line wrapper"></div>
 
-        <section class="feedback">
+        <section class="feedback" >
             <div class="wrapper">
             <h3 class="feedback-title">Подпишитесь на нашу рассылку</h3>
             <p class="feedback-text">Полезные статьи, акции, новости - получите все это сейчас!</p>
@@ -229,6 +241,10 @@
 
 
     <script src="/it-develop/crs/scripts/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
