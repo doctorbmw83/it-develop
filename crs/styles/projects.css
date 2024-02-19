@@ -100,6 +100,9 @@
     .images__item{
         padding-bottom: 20px;
     }
+    .projects-container__text{
+        width: 310px;
+    }
 }
 
 @media (max-width: 450px) and (min-width: 300px) {
