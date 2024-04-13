@@ -20,7 +20,7 @@
     align-items: center;
     gap: 40px;
     padding-right: 22px;
-    
+
 
 }
 
@@ -116,6 +116,45 @@
     border: none;
     transition: all 0.4s ease;
     cursor: pointer;
+    animation: blue-button 2.5s ease-in-out infinite reverse;
+}
+
+@keyframes blue-button {
+    0% {
+        background: #4985FF;
+    }
+
+    25% {
+        background: #8f49ff;
+
+    }
+    35% {
+        background: #a749ff;
+
+    }
+
+    50% {
+        background: #d549ff;
+
+    }
+    65% {
+        background: #e149ff;
+
+    }
+
+    75% {
+        background: #ff49e1;
+
+    }
+    85% {
+        background: #4949ff;
+
+    }
+
+    100% {
+        background: #4985FF;
+
+    }
 }
 
 .button a {
@@ -128,7 +167,11 @@
 }
 
 .button:hover {
+    /* animation-play-state: paused; */
+    animation-name: none;
     background: #206afd;
+
+
 }
 
 @media (max-width: 4000px) and (min-width: 992px) {
