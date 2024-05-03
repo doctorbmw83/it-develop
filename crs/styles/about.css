@@ -23,7 +23,6 @@
     font-size: 36px;
     font-weight: 700;
     line-height: 52px;
-    letter-spacing: 0%;
     text-align: left;
     width: 424px;
     height: 88px;
@@ -52,7 +51,6 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-    letter-spacing: 0%;
     text-align: left;
     width: 489px;
     height: 117px;
@@ -62,7 +60,6 @@
 
 .about-flex__img {
     background-position: center;
-    margin-right: -7px;
     margin-top: -4px;
 }
 
@@ -71,12 +68,10 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    letter-spacing: 0%;
     text-align: left;
     text-decoration-line: underline;
     display: block;
-    margin-top: -45px;
-    padding-top: 20px;
+    margin-top: 120px;
 }
 
 .about-line {
@@ -154,6 +149,9 @@
     .about-flex {
         flex-direction: column;
     }
+    .about-flex__img{
+        margin-top: 40px;
+    }
 
     .about-line {
         width: 70%;
@@ -172,6 +170,7 @@
     .about-grid__item {
         margin-bottom: 20px;
     }
+    
 
 }
 
@@ -181,8 +180,9 @@
     .about-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-
-
+    }
+    .about-link{
+        margin-top: 200px;
     }
 
     .about-grid__item {
@@ -207,7 +207,7 @@
     }
 
     .about-flex__img {
-        margin: 0 auto;
+        margin-top: 20px;
     }
 
     .about-flex__img img {
@@ -234,7 +234,8 @@
 
     }
 
-    .about-link {
-        margin: 20px auto;
+    
+    .about-link{
+        margin-top: 220px;
     }
 }

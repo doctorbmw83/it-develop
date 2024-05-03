@@ -27,3 +27,10 @@ a {
 .flex{
     display: flex;
 }
+/* Стилизация для устройств без поддержки hover */
+@media (hover: none) {
+  .button:hover {
+    background-color: transparent;
+    /* / *  Убираем эффект наведения  * / */
+  }
+}
