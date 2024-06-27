@@ -1,8 +1,9 @@
 .header {
     background-size: cover;
     background-position: center;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
+    
 }
 
 .header img {
@@ -119,7 +120,7 @@
     animation: blue-button 2.5s ease-in-out infinite reverse;
 }
 
-@keyframes blue-button {
+/* @keyframes blue-button {
     0% {
         background: #4985FF;
     }
@@ -155,7 +156,9 @@
         background: #4985FF;
 
     }
-}
+} */
+
+
 
 .button a {
     color: #FFF;
