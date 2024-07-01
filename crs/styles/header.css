@@ -1,8 +1,10 @@
 .header {
     background-size: cover;
     background-position: center;
+    
     /* position: relative; */
-    overflow: hidden;
+    
+   
     
 }
 
@@ -223,4 +225,10 @@
         font-size: 12px;
     }
 
+}
+@media (max-width: 320px) {
+    .header-content__title {
+        width: 300px;
+        font-size: 28px;
+}
 }

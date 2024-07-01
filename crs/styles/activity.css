@@ -214,3 +214,8 @@
     }
 
 }
+@media (max-width: 320px) {
+        .activity-container__title {
+        width: 300px;
+    }
+}

@@ -15,6 +15,7 @@
   background: transparent;
   width: 40px;
   height: 26px;
+  
 }
 
 .burger::before,
@@ -59,13 +60,13 @@
   position: absolute;
   display: grid;
   gap: 12px;
-  padding: 42px 0;
+  padding: 42px 10px;
   margin: 0;
-  background: #4985FF;
+  /* background: #4985FF; */
   list-style-type: none;
-  transform: translateX(100%);
+  transform: translateX(-200%);
   transition: .3s;
-  width: 50%;
+  width: 100%;
   /* width: 200px; */
 }
 
@@ -73,15 +74,18 @@
   display: block;
   padding: 8px;
   color: white;
+  background: #4985FF;
   font-size: 18px;
   text-align: center;
   text-decoration: none;
+  border: 2px solid #2421d6e5;
+  border-radius: 30px;
 }
 
 .menu-item:hover {
   background: #2421d694;
 }
 
-.burger-checkbox:checked~.menu-list {
+.burger-checkbox:checked~ .menu-list {
   transform: translateX(0);
 }
